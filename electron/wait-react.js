@@ -1,4 +1,4 @@
-import net from 'net';
+const net = require('net');
 
 const port = process.env.PORT ? process.env.PORT - 100 : 3000;
 
