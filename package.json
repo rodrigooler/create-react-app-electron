@@ -7,11 +7,14 @@
   },
   "devDependencies": {
     "electron": "^1.7.5",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.2.1",
     "foreman": "^2.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.3",
     "prettier": "^1.5.3",
-    "react-scripts": "1.0.11"
+    "react-scripts": "1.0.11",
+    "xo": "^0.18.2"
   },
   "homepage": "./",
   "lint-staged": {
@@ -30,7 +33,10 @@
     "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
     "react-start": "react-scripts start",
     "start": "nf start -p 3000",
-    "test": "react-scripts test --env=jsdom",
+    "test": "xo",
     "upg": "yarn upgrade-interactive"
+  },
+  "xo": {
+    "extends": "xo-react"
   }
 }
