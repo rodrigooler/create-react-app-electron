@@ -11,8 +11,7 @@
     "react-scripts": "1.0.11"
   },
   "homepage": "./",
-  "main": "src/electron-starter.js",
-  "private": true,
+  "main": "electron/starter.js",
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
